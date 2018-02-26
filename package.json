@@ -1,0 +1,23 @@
+{
+  "name": "Project-7",
+  "version": "1.0.0",
+  "description": "Twitter Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Victor Renderos",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.29.4",
+    "express": "^4.16.2",
+    "http-server": "^0.11.1",
+    "moment": "^2.20.1",
+    "pug": "^2.0.0-rc.4",
+    "twit": "^2.2.9",
+    "twitter": "^1.7.1"
+  }
+}
