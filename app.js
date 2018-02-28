@@ -15,9 +15,6 @@ var T = new Twit({
 });
 app.use('/static', express.static('public'));
 
-//an object to hold the data from twitter
-var myTweetsArray = { tweets: {}, friends: {}, direct_messages: {}};
-
 // Set up the pug and view engine
 app.set('view engine', 'pug');
 
