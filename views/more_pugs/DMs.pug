@@ -1,0 +1,14 @@
+.grid-33
+  .app--section
+    ul.app--message--list
+      li
+        h3
+          Conversation with
+            a #{messages[0].sender.name}
+        ul.app--message--conversation
+          each message in messages
+            li.app--message
+              .app--avatar(style='background-image: url(' + message.sender.profile_image_url + ')')
+                img(src=message.sender.profile_image_url)
+              p.app--message--text #{message.text}
+              p.app--message--timestamp=moment(message.created_at, 'ddd MMM DD HH:mm:ss Z YYYY').format('h:m')
